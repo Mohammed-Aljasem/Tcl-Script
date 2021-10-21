@@ -97,7 +97,3 @@ puts "Number lines are string: $count_strings"
 puts "Number lines are odd integer: $count_odd_numbers"
 puts "Number lines are even integer: $count_even_numbers"
 puts "Number lines are empty: $count_even_numbers"
-
-
-
-    
