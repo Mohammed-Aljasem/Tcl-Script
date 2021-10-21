@@ -19,7 +19,7 @@ while { [gets $input_file line] >= 0 } {
   }
 
   #check if line start with string characters
-  if {[regexp {^[a-zA-Z]} $line]}  {
+  if {[regexp {^[a-zA-Z]} $line] || [regexp {[+-]?([0-9]*[.])+[0-9]+} $line]}  {
     incr count_strings;
     set line_strings($count_strings) $line
     if {[expr {$count_strings <= 3} ]} {
